@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/META-INF
+END
+jdoconfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/META-INF/jdoconfig.xml
+END
+persistence.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/META-INF/persistence.xml
+END

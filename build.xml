@@ -1,0 +1,104 @@
+<project name="PhotoSharingDemo" default="datanucleusenhance">
+        <property file="build.properties" />
+        <property name="release_version" value="1.2"/>
+        <property name="appengine_webxml_tpl_file" value="war/WEB-INF/appengine-web.xml.tpl"/>
+        <property name="appengine_webxml_file" value="war/WEB-INF/appengine-web.xml"/>
+        <import file="${sdk.dir}/config/user/ant-macros.xml" />
+
+        <path id="project.classpath">
+                <pathelement path="war/WEB-INF/classes" />
+                <fileset dir="war/WEB-INF/lib">
+                        <include name="**/*.jar" />
+                </fileset>
+                <fileset dir="${sdk.dir}/lib">
+                        <include name="shared/**/*.jar" />
+                </fileset>
+        </path>
+
+        <target name="init" description="Copies the App Engine JARs to the WAR.">
+                <delete quiet="true" file="${appengine_webxml_file}"/>
+                <copy file="${appengine_webxml_tpl_file}" tofile="${appengine_webxml_file}">
+                        <filterchain>
+                                <replacetokens>
+                                        <token key="applicationId" value="${application.id}"/>
+                                        <token key="applicationVersion"
+                  value="${application.version}"/>
+                                        <token key="cloudSQLConnectionUrl" value="${cloud.sql.jdbc.url}"/>
+                                        <token key="cloudStorageBucketName" value="${cloud.storage.bucket.name}"/>
+                                        <token key="entityManagerFactory"
+                                          value="${application.entity.manager.factory}"/>
+                                </replacetokens>
+                        </filterchain>
+                </copy>
+                <copy todir="war/WEB-INF/lib" flatten="true">
+                        <fileset dir="${sdk.dir}/lib/user">
+                                <include name="**/*.jar" />
+                                <exclude name="**/appengine-api-labs-*.jar"/>
+                        </fileset>
+                        <fileset dir="${sdk.dir}/lib/opt/user/appengine-endpoints/v1">
+                                <include name="**/*.jar" />
+                        </fileset>
+                        <fileset dir="${sdk.dir}/lib/opt/user/appengine-api-labs/v1">
+                                <include name="**/*.jar" />
+                        </fileset>
+                </copy>
+        </target>
+
+        <target name="compile" depends="init"
+                description="Compiles Java source and copies other source files to the WAR.">
+                <mkdir dir="war/WEB-INF/classes" />
+                <copy todir="war/WEB-INF/classes">
+                        <fileset dir="src">
+                                <exclude name="**/*.java" />
+                        </fileset>
+                </copy>
+                <javac srcdir="src" destdir="war/WEB-INF/classes" classpathref="project.classpath"
+                        debug="on" />
+        </target>
+
+
+        <target name="datanucleusenhance" depends="compile"
+                description="Performs JDO enhancement on compiled data classes.">
+                <enhance_war war="war" />
+        </target>
+
+        <target name="runserver" depends="datanucleusenhance"
+                description="Starts the development server.">
+                <dev_appserver war="war" port="8999" address="0.0.0.0" />
+        </target>
+
+        <target name="debugserver" depends="datanucleusenhance"
+                description="Starts the development server.">
+                <dev_appserver war="war" port="8999" address="0.0.0.0">
+                        <options>
+                                <arg value="--jvm_flag=-Xdebug" />
+                                <arg value="--jvm_flag=-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=9999" />
+                        </options>
+                </dev_appserver>
+        </target>
+
+        <target name="update" depends="datanucleusenhance"
+                description="Uploads the application to App Engine.">
+                <appcfg action="update" war="war" />
+        </target>
+
+        <target name="update_indexes" depends="datanucleusenhance"
+                description="Uploads just the datastore index configuration to App Engine.">
+                <appcfg action="update_indexes" war="war" />
+        </target>
+
+        <target name="dist-tar" depends="clean">
+          <tar destfile="photo-sharing-demo-${release_version}.tar" basedir="." excludes="*.tar, *.zip, **/.svn/**, .settings/**"/>
+        </target>
+        <target name="dist-zip" depends="clean">
+          <zip destfile="photo-sharing-demo-${release_version}.zip" basedir="." excludes="*.tar, *.zip, **/.svn/**, .settings/**"/>
+        </target>
+        <target name="clean">
+                <delete quiet="true">
+                        <fileset dir="war/WEB-INF/lib" includes="*.jar"/>
+                        <fileset dir="war/WEB-INF/classes" includes="com/**"/>
+                        <fileset dir="war/WEB-INF/appengine-generated"/>
+                </delete>
+                <delete quiet="true" file="${appengine_webxml_file}"/>
+        </target>
+</project>

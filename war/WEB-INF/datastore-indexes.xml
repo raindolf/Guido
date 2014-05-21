@@ -1,0 +1,23 @@
+<!-- Indices written at Thu, 23 Aug 2012 17:29:31 UTC -->
+
+<datastore-indexes autoGenerate="true">
+
+    <datastore-index kind="Photo" ancestor="false" source="manual">
+        <property name="active" direction="asc"/>
+        <property name="uploadTime" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="Photo" ancestor="false" source="manual">
+        <property name="active" direction="asc"/>
+        <property name="shared" direction="asc"/>
+        <property name="ownerId" direction="asc"/>
+    </datastore-index>
+
+
+    <datastore-index kind="Comment" ancestor="false" source="manual">
+        <property name="ownerId" direction="asc"/>
+        <property name="photoId" direction="asc"/>
+        <property name="timestamp" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

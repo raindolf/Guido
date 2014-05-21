@@ -1,0 +1,11 @@
+1.2 05/22/2013
+  - Fixed the XSS in the JSP.
+  - Fixed a DemoUser SQL query.
+
+1.1 01/18/2013 
+  - Allows the application stores photos in Blobstore if GCS is not available
+  - Enhanced the UI to avoid posting empty photos and comments.
+  - Adds documentation links in build.properties file.
+
+1.0 09/25/2012
+  - First release.

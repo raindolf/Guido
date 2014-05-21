@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/nosql
+END
+CommentNoSql.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/nosql/CommentNoSql.java
+END
+DemoUserNoSql.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/nosql/DemoUserNoSql.java
+END
+PhotoManagerNoSql.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/nosql/PhotoManagerNoSql.java
+END
+DemoEntityManagerNoSqlFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/nosql/DemoEntityManagerNoSqlFactory.java
+END
+PhotoNoSql.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/nosql/PhotoNoSql.java
+END
+DemoEntityManagerNoSql.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/nosql/DemoEntityManagerNoSql.java
+END
+CommentManagerNoSql.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/nosql/CommentManagerNoSql.java
+END
+DemoUserManagerNoSql.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/nosql/DemoUserManagerNoSql.java
+END
+DemoEntityNoSql.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/nosql/DemoEntityNoSql.java
+END

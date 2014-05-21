@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>UploadHandlerServlet</servlet-name>
+    <servlet-class>com.google.cloud.demo.UploadHandlerServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.google.cloud.demo.DownloadServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>EditServlet</servlet-name>
+    <servlet-class>com.google.cloud.demo.PhotoEditServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CommentPostServlet</servlet-name>
+    <servlet-class>com.google.cloud.demo.CommentPostServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CleanUpServlet</servlet-name>
+    <servlet-class>com.google.cloud.demo.CleanupCronServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CleanUpServlet</servlet-name>
+    <url-pattern>/cron/clean</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CommentPostServlet</servlet-name>
+    <url-pattern>/post</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>EditServlet</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UploadHandlerServlet</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>photofeed.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+    <init-param>
+      <param-name>services</param-name>
+      <param-value/>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <url-pattern>/_ah/spi/*</url-pattern>
+  </servlet-mapping>
+
+  <security-constraint>
+    <web-resource-collection>
+      <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>*</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+    <security-constraint>
+        <web-resource-collection>
+            <url-pattern>/cron/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+</web-app>

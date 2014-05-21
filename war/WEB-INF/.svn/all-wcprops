@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/21/trunk/photo-sharing-demo/war/WEB-INF
+END
+cron.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/21/trunk/photo-sharing-demo/war/WEB-INF/cron.xml
+END
+logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/18/trunk/photo-sharing-demo/war/WEB-INF/logging.properties
+END
+datastore-indexes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/15/trunk/photo-sharing-demo/war/WEB-INF/datastore-indexes.xml
+END
+photo_sharing_demo_db.sql
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/15/trunk/photo-sharing-demo/war/WEB-INF/photo_sharing_demo_db.sql
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/15/trunk/photo-sharing-demo/war/WEB-INF/web.xml
+END
+appengine-web.xml.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/15/trunk/photo-sharing-demo/war/WEB-INF/appengine-web.xml.tpl
+END

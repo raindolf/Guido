@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/23/trunk/photo-sharing-demo/src/com/google/cloud/demo/model
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/Utils.java
+END
+DemoEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/DemoEntity.java
+END
+Comment.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/Comment.java
+END
+DemoUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/DemoUser.java
+END
+DemoModelException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/DemoModelException.java
+END
+DemoEntityManagerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/DemoEntityManagerFactory.java
+END
+PhotoManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/PhotoManager.java
+END
+Photo.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/Photo.java
+END
+DemoEntityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/DemoEntityManager.java
+END
+CommentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/CommentManager.java
+END
+DemoUserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/model/DemoUserManager.java
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/23/trunk/photo-sharing-demo/src/com/google/cloud/demo
+END
+ConfigManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/20/trunk/photo-sharing-demo/src/com/google/cloud/demo/ConfigManager.java
+END
+PhotoEditServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/PhotoEditServlet.java
+END
+PhotoServiceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/18/trunk/photo-sharing-demo/src/com/google/cloud/demo/PhotoServiceManager.java
+END
+AppContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/AppContext.java
+END
+ServletUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/20/trunk/photo-sharing-demo/src/com/google/cloud/demo/ServletUtils.java
+END
+UploadHandlerServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/UploadHandlerServlet.java
+END
+DownloadServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/DownloadServlet.java
+END
+CommentPostServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/CommentPostServlet.java
+END
+CleanupCronServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/15/trunk/photo-sharing-demo/src/com/google/cloud/demo/CleanupCronServlet.java
+END
