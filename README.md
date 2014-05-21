@@ -1,4 +1,4 @@
-# Guido Sohne 41st Birthday Photo Feed app
+# Guido 41st Birthday Photo Feed app
 
 Biography : Guido Sohne was the Platform Strategy Manager of Microsoft East Africa based in Nairobi, Kenya but with responsibility for 52 countries in West, East & Central Africa. He died suddenly on 2nd May 2008 aged 34.Guido Sohne was widely recognized as one of Africa’s top software developers, having been called the ‘very young elder statesman’ of free software in Africa in connection with his longstanding contributions and efforts to increase the usage of advanced software technology for the development of Africa’s people and its economies.
 
