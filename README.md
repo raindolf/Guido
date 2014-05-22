@@ -5,6 +5,7 @@ Biography : Guido Sohne was the Platform Strategy Manager of Microsoft East Afri
 Overview : The Photofeed Java app demonstrates the use of several Google Cloud platform products in one application to provide a media sharing and management solution. It runs on App Engine and for datastore uses your choice of either the App Engine non SQL Datastore or Google Cloud SQL to store photo metadata and comments about the photos. The actual photo binaries (blobs) are stored in Google Cloud Storage (GCS) regardless of which datastore you choose. (The datastore choice is a build-time choice made via build properties prior to compiling the app; the default is the non SQL App Engine Datastore.) The user starts off by logging in with a valid Google account. After login, the user sees a shared photo stream containing photos and comments uploaded by the users of the app. The photos are displayed in the chronological order posted, and any comments for each photo are also shown in the chronological order posted.
 
 
+[View the live app here](http://gsohnephotos.appspot.com/
 
 Built by:
 
